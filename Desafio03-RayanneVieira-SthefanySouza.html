@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3º Desafio - Formulário</title>
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .desafio {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        fieldset {
+            border: 2px solid darkblue;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: darkblue;
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+            width: 100px;
+        }
+
+        input,
+        select,
+        textarea {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            width: auto;
+        }
+
+        button {
+            background: #1E90FF;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0073e6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="desafio">
+        <fieldset>
+            <legend>Entre em Contato</legend>
+            <form>
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto">
+                        <option>Selecione</option>
+                        <option>Suporte</option>
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Reclamação</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <label for="novidades">
+                        <input type="checkbox" id="novidades"> Aceito receber novidades por e-mail
+                    </label>
+                </div>
+
+
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios do Professor</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ece9e6, #ffffff);
+            margin: 0;
+            padding-top: 120px;
+            /* espaço para o header fixo */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4b4bff;
+            color: white;
+            padding: 25px;
+            width: 100%;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+
+            position: fixed;
+            /* 🟦 Header fixo */
+            top: 0;
+            /* encostado no topo */
+            left: 0;
+            z-index: 1000;
+            /* fica acima dos cards */
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            margin-top: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .card {
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: 0.3s;
+            color: #000;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* ---------------------- */
+        /*   CARD 1 - Harry Potter */
+        /* ---------------------- */
+        .hp {
+            background-color: darkblue;
+            border: 3px solid gold;
+            color: gold;
+        }
+
+        .hp h2 {
+            background-color: gold;
+            color: black;
+            padding: 8px;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+
+        .btn-hp {
+            background-color: black;
+            border: 2px solid gold;
+        }
+
+        /* ---------------------- */
+        /*   CARD 2 - Lista */
+        /* ---------------------- */
+        .lista {
+            background-color: purple;
+            border: 3px solid #ff00ae;
+            color: white;
+        }
+
+        .lista h2 {
+            background-color: rgb(147, 112, 216);
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .btn-lista {
+            background-color: #ff00ae;
+        }
+
+        /* ---------------------- */
+        /*   CARD 3 - Formulário */
+        /* ---------------------- */
+        .form {
+            background-color: #f4f4f9;
+            border: 3px solid darkblue;
+        }
+
+        .form h2 {
+            color: darkblue;
+        }
+
+        .btn-form {
+            background-color: #1E90FF;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Desafios do Professor</h1>
+        <p>Escolha um dos desafios para acessar:</p>
+    </header>
+
+    <div class="container">
+
+        <!-- DESAFIO 1 - CARD HARRY POTTER -->
+        <div class="card hp">
+            <h2>Desafio 1 - Quiz de Harry Potter</h2>
+            <p>Teste seus conhecimentos sobre o mundo mágico!</p>
+            <a target="_blank" class="button btn-hp" href="Desafio01-RayanneVieira-SthefanySouza.html">Acessar Quiz</a>
+        </div>
+
+        <!-- DESAFIO 2 - CARD LISTA DE COMPRAS -->
+        <div class="card lista">
+            <h2>Desafio 2 - Lista de Compras</h2>
+            <p>Gerencie suas compras e tarefas.</p>
+            <a target="_blank" class="button btn-lista" href="Desafio02-RayanneVieira-SthefanySouza.html">Acessar
+                Lista</a>
+        </div>
+
+        <!-- DESAFIO 3 - CARD FORMULÁRIO -->
+        <div class="card form">
+            <h2>Desafio 3 - Esquete de Mensagem/Reclamação</h2>
+            <p>Simulação de envio de mensagem para uma loja/empresa.</p>
+            <a target="_blank" class="button btn-form" href="Desafio03-RayanneVieira-SthefanySouza.html">Acessar
+                Esquete</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
